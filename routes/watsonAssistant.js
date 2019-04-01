@@ -1,15 +1,14 @@
 var express = require('express');
 var router = express.Router();
-const watsonAssistant = require('../config/watsonConfig');
+const watsonAssistant = require('../config/watsonAssistant');
 
 router.post('/', function (req, res, next) {
-    var { text, context } = req.body;
-    context = JSON.parse(context);
+    var { text, watsonAssistantContext } = req.body;
+    context = JSON.parse(watsonAssistantContext);
    
     const params = {
         input: { text } ,
-        workspace_id: '365cd98a-c82b-4af1-b03b-b26216d5237e',
-
+        workspace_id: 'SEU WORKSPACE',
         context
     };
     
