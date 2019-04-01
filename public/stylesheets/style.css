@@ -1,0 +1,33 @@
+body {
+  background:
+  linear-gradient(
+          rgba(0, 0, 0, 0.1), 
+          rgba(0, 0, 0, 0.1)
+  ),
+  url(https://jelvix.com/images/blog/5a958ed4af8e7.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.textos {
+  padding-top: 1.2em !important; 
+  font-size: 1.2em;
+  font-family: "Lucida Console";
+  text-align: center !important;
+  color: white;
+}
+
+.box {
+  background: white;
+  border-radius: 25px;
+  width: 25%;
+  margin-left: 35%;
+  padding: 50px;
+}
+
+.chat {
+  font-family: "Lucida Console";
+  color: white;
+}
