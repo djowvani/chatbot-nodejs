@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var multer  = require('multer');
-//var upload = multer({ dest: 'uploads/' });
 var upload = multer();
 var speechToText = require('../config/watsonSpeechToText');
 
@@ -24,5 +23,4 @@ router.post('/', upload.single('audioFile'), function (req, res, next) {
     });
     
 });
-
 module.exports = router;
